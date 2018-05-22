@@ -1,0 +1,28 @@
+﻿<h2>Donor Entry</h2>
+
+@using (Html.BeginForm("Donors", "User", FormMethod.Post))
+{
+        <label for="fname">First Name</label>
+<br />
+<input class="form-control" name="firstname" autocomplete="off" id="fname" />
+    <br />
+   <label for="lname"> Last Name</label><br />
+<input class="form-control" name="lastname" autocomplete="off" id="lname" />
+    <br />
+    <label for="snumber"> Street Number</label><br/>
+    <input class="form-control" name="streetnumber" autocomplete="off" id="snumber" />
+    <br/>
+    <label for="sname">Street Name</label>
+        <br />
+        <input class="form-control" name="streetname" autocomplete="off" id="sname" />
+    <br />
+    <label for="zcode">Zip Code</label>
+    <br/>
+    <input class="form-control" name="zipcode" autocomplete="off" id="zcode" />
+    <br/>
+    <label for="opation">Occupation</label>
+    <br />
+    <input class="form-control" name="occupation" autocomplete="off" id="opation" />
+    <br />
+    <button type="submit"  class="btn btn-primary">Submit</button>
+}

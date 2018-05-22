@@ -1,0 +1,20 @@
+﻿<h2>Registration</h2>
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    <label for="fname">First Name</label>
+    <br />
+    <input class="form-control" name="firstname" autocomplete="off" id="fname" />
+        <br />
+        <label for="lname"> Last Name</label><br />
+        <input class="form-control" name="lastname" autocomplete="off" id="lname" />
+        <br />
+        <label for="email"> Email Address</label><br />
+        <input class="form-control" name="emailaddress" autocomplete="off" id="email" />
+        <br />
+        <label for="pword">Password</label>
+        <br />
+        <input class="form-control" name="password" autocomplete="off" id="pword" />
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+}
+
